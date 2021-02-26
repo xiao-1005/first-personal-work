@@ -1,0 +1,855 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src='https://cdn.bootcss.com/echarts/3.7.0/echarts.simple.js'></script>
+        <script src='../dist/echarts-wordcloud.js'></script>
+    </head>
+    <body>
+        <style>
+            html, body, #main {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+        </style>
+        <div id='main'></div>
+        <script>
+            var chart = echarts.init(document.getElementById('main'));
+
+            var option = {
+                tooltip: {},
+                series: [ {
+                    type: 'wordCloud',
+                    gridSize: 8,
+                    sizeRange: [10,60 ],
+                    rotationRange: [0, 0],
+                    shape: 'cardioid',
+                    width: '100%',
+                    height: '100%',
+                    drawOutOfBound: true,
+                    textStyle: {
+                        normal: {
+                            color: function () {
+                                return 'rgb(' + [
+                                    Math.round(Math.random() * 160),
+                                    Math.round(Math.random() * 160),
+                                    Math.round(Math.random() * 160)
+                                ].join(',') + ')';
+                            }
+                        },
+                        emphasis: {
+                            shadowBlur: 15,
+                            shadowColor: "#333"
+                        }
+                    },
+                    data: [
+                    {
+                        "name": "我们",
+                        "value": 11000
+                      },
+                      {
+                        "name": "真的",
+                        "value": 9000
+                      },
+                      {
+                        "name": "疫情",
+                        "value": 9000
+                      },
+                      {
+                        "name": "你们",
+                        "value": 8000
+                      },
+                      {
+                        "name": "医生",
+                        "value": 7000
+                      },
+                      {
+                        "name": "感谢",
+                        "value": 7000
+                      },
+                      {
+                        "name": "护士",
+                        "value": 6000
+                      },
+                      {
+                        "name": "一个",
+                        "value": 6000
+                      },
+                      {
+                        "name": "没有",
+                        "value": 6000
+                      },
+                      {
+                        "name": "一样",
+                        "value": 5000
+                      },
+                      {
+                        "name": "但是",
+                        "value": 5000
+                      },
+                      {
+                        "name": "武汉",
+                        "value": 5000
+                      },
+                      {
+                        "name": "自己",
+                        "value": 5000
+                      },
+                      {
+                        "name": "看到",
+                        "value": 4000
+                      },
+                      {
+                        "name": "付出",
+                        "value": 4000
+                      },
+                      {
+                        "name": "那些",
+                        "value": 4000
+                      },
+                      {
+                        "name": "因为",
+                        "value": 4000
+                      },
+                      {
+                        "name": "辛苦",
+                        "value": 4000
+                      },
+                      {
+                        "name": "当时",
+                        "value": 3000
+                      },
+                      {
+                        "name": "片酬",
+                        "value": 3000
+                      },
+                      {
+                        "name": "致敬",
+                        "value": 3000
+                      },
+                      {
+                        "name": "为了",
+                        "value": 3000
+                      },
+                      {
+                        "name": "知道",
+                        "value": 3000
+                      },
+                      {
+                        "name": "一直",
+                        "value": 3000
+                      },
+                      {
+                        "name": "评分",
+                        "value": 3000
+                      },
+                      {
+                        "name": "大家",
+                        "value": 3000
+                      },
+                      {
+                        "name": "时候",
+                        "value": 3000
+                      },
+                      {
+                        "name": "工作",
+                        "value": 3000
+                      },
+                      {
+                        "name": "生命",
+                        "value": 2000
+                      },
+                      {
+                        "name": "恐惧",
+                        "value": 2000
+                      },
+                      {
+                        "name": "病魔",
+                        "value": 2000
+                      },
+                      {
+                        "name": "演员",
+                        "value": 2000
+                      },
+                      {
+                        "name": "出演",
+                        "value": 2000
+                      },
+                      {
+                        "name": "英雄",
+                        "value": 2000
+                      },
+                      {
+                        "name": "不想",
+                        "value": 2000
+                      },
+                      {
+                        "name": "前线",
+                        "value": 2000
+                      },
+                      {
+                        "name": "使命感",
+                        "value": 2000
+                      },
+                      {
+                        "name": "伟大",
+                        "value": 2000
+                      },
+                      {
+                        "name": "大多数",
+                        "value": 2000
+                      },
+                      {
+                        "name": "什么",
+                        "value": 2000
+                      },
+                      {
+                        "name": "就是",
+                        "value": 2000
+                      },
+                      {
+                        "name": "过年",
+                        "value": 2000
+                      },
+                      {
+                        "name": "不能",
+                        "value": 2000
+                      },
+                      {
+                        "name": "作为",
+                        "value": 2000
+                      },
+                      {
+                        "name": "家里",
+                        "value": 2000
+                      },
+                      {
+                        "name": "深怕",
+                        "value": 2000
+                      },
+                      {
+                        "name": "谢谢",
+                        "value": 2000
+                      },
+                      {
+                        "name": "人们",
+                        "value": 2000
+                      },
+                      {
+                        "name": "警察",
+                        "value": 2000
+                      },
+                      {
+                        "name": "每天",
+                        "value": 2000
+                      },
+                      {
+                        "name": "加班",
+                        "value": 2000
+                      },
+                      {
+                        "name": "办法",
+                        "value": 2000
+                      },
+                      {
+                        "name": "岗位",
+                        "value": 2000
+                      },
+                      {
+                        "name": "眼泪",
+                        "value": 2000
+                      },
+                      {
+                        "name": "虽然",
+                        "value": 2000
+                      },
+                      {
+                        "name": "很多",
+                        "value": 2000
+                      },
+                      {
+                        "name": "心里",
+                        "value": 2000
+                      },
+                      {
+                        "name": "一股",
+                        "value": 2000
+                      },
+                      {
+                        "name": "坚持",
+                        "value": 2000
+                      },
+                      {
+                        "name": "努力",
+                        "value": 2000
+                      },
+                      {
+                        "name": "标语",
+                        "value": 2000
+                      },
+                      {
+                        "name": "那个",
+                        "value": 2000
+                      },
+                      {
+                        "name": "校长",
+                        "value": 2000
+                      },
+                      {
+                        "name": "喜欢",
+                        "value": 2000
+                      },
+                      {
+                        "name": "发生",
+                        "value": 2000
+                      },
+                      {
+                        "name": "只有",
+                        "value": 2000
+                      },
+                      {
+                        "name": "地方",
+                        "value": 2000
+                      },
+                      {
+                        "name": "在家",
+                        "value": 2000
+                      },
+                      {
+                        "name": "辞职",
+                        "value": 1000
+                      },
+                      {
+                        "name": "人之常情",
+                        "value": 1000
+                      },
+                      {
+                        "name": "面前",
+                        "value": 1000
+                      },
+                      {
+                        "name": "害怕",
+                        "value": 1000
+                      },
+                      {
+                        "name": "理解",
+                        "value": 1000
+                      },
+                      {
+                        "name": "很棒",
+                        "value": 1000
+                      },
+                      {
+                        "name": "导演",
+                        "value": 1000
+                      },
+                      {
+                        "name": "机会",
+                        "value": 1000
+                      },
+                      {
+                        "name": "情况",
+                        "value": 1000
+                      },
+                      {
+                        "name": "抗拒",
+                        "value": 1000
+                      },
+                      {
+                        "name": "一线",
+                        "value": 1000
+                      },
+                      {
+                        "name": "人员",
+                        "value": 1000
+                      },
+                      {
+                        "name": "这部",
+                        "value": 1000
+                      },
+                      {
+                        "name": "如果",
+                        "value": 1000
+                      },
+                      {
+                        "name": "它们",
+                        "value": 1000
+                      },
+                      {
+                        "name": "点赞",
+                        "value": 1000
+                      },
+                      {
+                        "name": "追完",
+                        "value": 1000
+                      },
+                      {
+                        "name": "最美",
+                        "value": 1000
+                      },
+                      {
+                        "name": "行者",
+                        "value": 1000
+                      },
+                      {
+                        "name": "再来",
+                        "value": 1000
+                      },
+                      {
+                        "name": "一起",
+                        "value": 1000
+                      },
+                      {
+                        "name": "一位",
+                        "value": 1000
+                      },
+                      {
+                        "name": "抗疫",
+                        "value": 1000
+                      },
+                      {
+                        "name": "自私",
+                        "value": 1000
+                      },
+                      {
+                        "name": "怕死",
+                        "value": 1000
+                      },
+                      {
+                        "name": "使命",
+                        "value": 1000
+                      },
+                      {
+                        "name": "所以",
+                        "value": 1000
+                      },
+                      {
+                        "name": "其实",
+                        "value": 1000
+                      },
+                      {
+                        "name": "不管",
+                        "value": 1000
+                      },
+                      {
+                        "name": "自不",
+                        "value": 1000
+                      },
+                      {
+                        "name": "自愿",
+                        "value": 1000
+                      },
+                      {
+                        "name": "奔赴前线",
+                        "value": 1000
+                      },
+                      {
+                        "name": "对抗",
+                        "value": 1000
+                      },
+                      {
+                        "name": "未知",
+                        "value": 1000
+                      },
+                      {
+                        "name": "风险",
+                        "value": 1000
+                      },
+                      {
+                        "name": "唯一",
+                        "value": 1000
+                      },
+                      {
+                        "name": "可能",
+                        "value": 1000
+                      },
+                      {
+                        "name": "尽可能",
+                        "value": 1000
+                      },
+                      {
+                        "name": "告诉",
+                        "value": 1000
+                      },
+                      {
+                        "name": "我爸",
+                        "value": 1000
+                      },
+                      {
+                        "name": "不要",
+                        "value": 1000
+                      },
+                      {
+                        "name": "串门",
+                        "value": 1000
+                      },
+                      {
+                        "name": "添麻烦",
+                        "value": 1000
+                      },
+                      {
+                        "name": "那么",
+                        "value": 1000
+                      },
+                      {
+                        "name": "谢谢你们",
+                        "value": 1000
+                      },
+                      {
+                        "name": "感动",
+                        "value": 1000
+                      },
+                      {
+                        "name": "段时间",
+                        "value": 1000
+                      },
+                      {
+                        "name": "恐怖",
+                        "value": 1000
+                      },
+                      {
+                        "name": "看着",
+                        "value": 1000
+                      },
+                      {
+                        "name": "楼下",
+                        "value": 1000
+                      },
+                      {
+                        "name": "救护车",
+                        "value": 1000
+                      },
+                      {
+                        "name": "一天天",
+                        "value": 1000
+                      },
+                      {
+                        "name": "来来往往",
+                        "value": 1000
+                      },
+                      {
+                        "name": "整个",
+                        "value": 1000
+                      },
+                      {
+                        "name": "楼栋",
+                        "value": 1000
+                      },
+                      {
+                        "name": "疑似",
+                        "value": 1000
+                      },
+                      {
+                        "name": "患者",
+                        "value": 1000
+                      },
+                      {
+                        "name": "大门",
+                        "value": 1000
+                      },
+                      {
+                        "name": "不敢",
+                        "value": 1000
+                      },
+                      {
+                        "name": "感染",
+                        "value": 1000
+                      },
+                      {
+                        "name": "年纪",
+                        "value": 1000
+                      },
+                      {
+                        "name": "母亲",
+                        "value": 1000
+                      },
+                      {
+                        "name": "小孩",
+                        "value": 1000
+                      },
+                      {
+                        "name": "想想",
+                        "value": 1000
+                      },
+                      {
+                        "name": "一挺",
+                        "value": 1000
+                      },
+                      {
+                        "name": "季度",
+                        "value": 1000
+                      },
+                      {
+                        "name": "还好",
+                        "value": 1000
+                      },
+                      {
+                        "name": "过来",
+                        "value": 1000
+                      },
+                      {
+                        "name": "做过",
+                        "value": 1000
+                      },
+                      {
+                        "name": "贡献",
+                        "value": 1000
+                      },
+                      {
+                        "name": "太低",
+                        "value": 1000
+                      },
+                      {
+                        "name": "起码",
+                        "value": 1000
+                      },
+                      {
+                        "name": "9.9",
+                        "value": 1000
+                      },
+                      {
+                        "name": "2017",
+                        "value": 1000
+                      },
+                      {
+                        "name": "年入",
+                        "value": 1000
+                      },
+                      {
+                        "name": "警至",
+                        "value": 1000
+                      },
+                      {
+                        "name": "2020",
+                        "value": 1000
+                      },
+                      {
+                        "name": "普通人",
+                        "value": 1000
+                      },
+                      {
+                        "name": "职责",
+                        "value": 1000
+                      },
+                      {
+                        "name": "责任",
+                        "value": 1000
+                      },
+                      {
+                        "name": "每天晚上",
+                        "value": 1000
+                      },
+                      {
+                        "name": "手机",
+                        "value": 1000
+                      },
+                      {
+                        "name": "新闻",
+                        "value": 1000
+                      },
+                      {
+                        "name": "流过",
+                        "value": 1000
+                      },
+                      {
+                        "name": "多次",
+                        "value": 1000
+                      },
+                      {
+                        "name": "男人",
+                        "value": 1000
+                      },
+                      {
+                        "name": "应该",
+                        "value": 1000
+                      },
+                      {
+                        "name": "事情",
+                        "value": 1000
+                      },
+                      {
+                        "name": "90",
+                        "value": 1000
+                      },
+                      {
+                        "name": "今年",
+                        "value": 1000
+                      },
+                      {
+                        "name": "23",
+                        "value": 1000
+                      },
+                      {
+                        "name": "得到",
+                        "value": 1000
+                      },
+                      {
+                        "name": "任何",
+                        "value": 1000
+                      },
+                      {
+                        "name": "奖励",
+                        "value": 1000
+                      },
+                      {
+                        "name": "表扬",
+                        "value": 1000
+                      },
+                      {
+                        "name": "包括",
+                        "value": 1000
+                      },
+                      {
+                        "name": "背后",
+                        "value": 1000
+                      },
+                      {
+                        "name": "默默",
+                        "value": 1000
+                      },
+                      {
+                        "name": "一刻",
+                        "value": 1000
+                      },
+                      {
+                        "name": "说些",
+                        "value": 1000
+                      },
+                      {
+                        "name": "还有",
+                        "value": 1000
+                      },
+                      {
+                        "name": "结束",
+                        "value": 1000
+                      },
+                      {
+                        "name": "解放军",
+                        "value": 1000
+                      },
+                      {
+                        "name": "一切",
+                        "value": 1000
+                      },
+                      {
+                        "name": "胜利",
+                        "value": 1000
+                      },
+                      {
+                        "name": "不远",
+                        "value": 1000
+                      },
+                      {
+                        "name": "出现",
+                        "value": 1000
+                      },
+                      {
+                        "name": "拐点",
+                        "value": 1000
+                      },
+                      {
+                        "name": "每个",
+                        "value": 1000
+                      },
+                      {
+                        "name": "保持",
+                        "value": 1000
+                      },
+                      {
+                        "name": "距离",
+                        "value": 1000
+                      },
+                      {
+                        "name": "息息相关",
+                        "value": 1000
+                      },
+                      {
+                        "name": "认识",
+                        "value": 1000
+                      },
+                      {
+                        "name": "严重性",
+                        "value": 1000
+                      },
+                      {
+                        "name": "一些",
+                        "value": 1000
+                      },
+                      {
+                        "name": "奶鹅",
+                        "value": 1000
+                      },
+                      {
+                        "name": "找到",
+                        "value": 1000
+                      },
+                      {
+                        "name": "觉得",
+                        "value": 1000
+                      },
+                      {
+                        "name": "搞笑",
+                        "value": 1000
+                      },
+                      {
+                        "name": "首先",
+                        "value": 1000
+                      },
+                      {
+                        "name": "然后",
+                        "value": 1000
+                      },
+                      {
+                        "name": "院长",
+                        "value": 1000
+                      },
+                      {
+                        "name": "湖北",
+                        "value": 1000
+                      },
+                      {
+                        "name": "拼过",
+                        "value": 1000
+                      },
+                      {
+                        "name": "祝福",
+                        "value": 1000
+                      },
+                      {
+                        "name": "中秋",
+                        "value": 1000
+                      },
+                      {
+                        "name": "国庆节",
+                        "value": 1000
+                      },
+                      {
+                        "name": "快乐",
+                        "value": 1000
+                      },
+                      {
+                        "name": "阖家幸福",
+                        "value": 1000
+                      },
+                      {
+                        "name": "我姐",
+                        "value": 1000
+                      },
+                      {
+                        "name": "第二批",
+                        "value": 1000
+                      },
+                      {
+                        "name": "援鄂",
+                        "value": 1000
+                      }
+                    ]
+                } ]
+            };
+
+            chart.setOption(option);
+
+            window.onresize = chart.resize;
+        </script>
+    </body>
+</html>
